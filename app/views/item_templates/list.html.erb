@@ -1,0 +1,35 @@
+<div class="items">
+  <div class="banner">
+    <img src="/small.jpg" alt="Margarita Potylitsyna headshot" class="banner-image">
+  </div>
+
+  <div class="name">
+    Margarita Potylitsyna
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/Ritumka" target="_blank"><i class="fa-brands fa-github"></i>
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/margo-tugarina/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+      LinkedIn
+    </a>
+
+    <a href="https://www.instagram.com/caliningraphy" target="_blank"><i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+
+  </div>
+
+<div class="link">
+  <% @list_of_items.each do |the_item| %>
+  <div class="item">
+    <img src="<%= the_item.thumbnail_url %>" class="thumbnail">
+
+    <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+      <%= the_item.link_description %>
+    </a>
+  </div>
+  <% end %>
+</div>

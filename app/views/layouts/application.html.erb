@@ -8,6 +8,99 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <meta charset="utf-8">
+    <meta name="author" content="Margarita Potylitsyna">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: #0e172c;
+        opacity: 1;
+        background-image: radial-gradient(#1a2a4f 1px, #0e172c 1px);
+        background-size: 20px 20px;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        max-width: 400px;
+        flex-grow: 1;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1.4em;
+      }
+
+      .social-icons a {
+        color: white;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 0.8em;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+      }
+
+      .link {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        -webkit-box-shadow: 6px 6px 0px 0px rgba(8,13,26,1);
+        -moz-box-shadow: 6px 6px 0px 0px rgba(8,13,26,1);
+        box-shadow: 6px 6px 0px 0px rgba(8,13,26,1);
+      }
+
+      .link a {
+        color: #1583df;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.9em;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
   </head>
 
   <body>
